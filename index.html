@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alex Reyes">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Alex Reyes"/>
+    <meta property="og:url" content="index.html"/>
+    <meta property="og:site_name" content="Alex Reyes"/>
+    <meta property="og:description" content="Alex Reyes"/>
+    
+    <meta name="keywords" content="Alex Reyes, Microsoft, Listrak, resume, penn state/>
+
+    <title>Alex Reyes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Hi, my name is Alex Reyes"/>
+    
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="assets/css/crc.css" rel="stylesheet" media="screen">
+
+    <script type="text/javascript">
+
+    </script>
+    <script type="text/javascript" src="https://use.typekit.net/hkc8kic.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  </head>
+  <body onunload="">
+    <div class="container" id="container">
+      <br>
+      <div class="row">
+        <div class="col-xs-1 col-md-3">  
+        </div>
+        <div class="col-xs-10 col-md-6">
+          <h1>Hey!</h1>
+          <p>I'm <a href="assets/img/alexreyes.png">Alex Reyes</a>. Here's <a href="mailto:reyesruizalex@gmail.com">my email</a>.</p>
+          
+          <p>I'm a college student majoring in Computer Science at <a href = "http://www.psu.edu/">Penn State</a>. Currently <a href="https://www.microsoft.com/en-us/">interning at Microsoft</a>. Before that I worked at <a href="https://www.listrak.com/">Listrak</a> as a programmer intern. Here's my <a href="assets/resume.pdf">resume</a>.
+
+          <p>If you're interested in getting in touch, here's my <a href="https://github.com/reyesalex">Github</a>, <a href="https://www.instagram.com/alex_reyes243/"> Instagram</a>, and <a href="https://www.linkedin.com/in/alex-reyes-7450337b/">LinkedIn</a>.
+
+          <p>✌️</p>
+        </div>
+        <div class="col-xs-1 col-md-3">  
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){ 
+        $('#container').fadeIn(800);
+
+        $("a.transition").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(300, redirectPage);      
+        });
+           
+        function redirectPage() {
+            window.location = linkLocation;
+        }
+
+      });
+    </script>
+  </body>
+</html>
