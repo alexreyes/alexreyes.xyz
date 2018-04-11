@@ -1,75 +1,69 @@
+<style>
+
+body {
+	background: url("images/background.jpg") no-repeat;
+	background-size: cover;
+
+}
+
+.smallerImage {
+	height: 120px;
+	width: 120px;
+	border-radius: 100%;
+}
+
+.mainText {
+	color: grey;
+	padding: 20px
+}
+
+.bigText{
+	color: white;
+	font-size: 110px
+}
+.mediumText {
+	color:white;
+	font-size: 30px;
+	padding: 130px;
+}
+
+#myBtn {
+	padding: 20px;
+	color:"color:black";
+}
+</style>
+
 <!DOCTYPE html>
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+      rel="stylesheet">
 <html>
-  
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Alex Reyes">
-    <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Alex Reyes"/>
-    <meta property="og:url" content="index.html"/>
-    <meta property="og:site_name" content="Alex Reyes"/>
-    <meta property="og:description" content="Alex Reyes"/>
-    
-    <meta name="keywords" content="Alex Reyes, Microsoft, Listrak, resume, penn state/>
 
-    <title>Alex Reyes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-    <meta name="description" content="Hi, my name is Alex Reyes"/>
-    
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="assets/css/crc.css" rel="stylesheet" media="screen">
+	<link rel = "stylesheet" href = "jquery-ui-1.11.4.custom">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script type = "text/javascript" src = "script.js"></script>
+	<script type="text/javascript" src = "jquery-ui.js"></script>
+	<title>Alex Reyes</title>
 
-    <script type="text/javascript">
+</head>
+<body>
 
-    </script>
-    <script type="text/javascript" src="https://use.typekit.net/hkc8kic.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<h1 class = "text-center mainText bigText">Alex Reyes</p>
 
-  </head>
-  <body onunload="">
-    <div class="container" id="container">
-      <br>
-      <div class="row">
-        <div class="col-xs-1 col-md-3">  
-        </div>
-        <div class="col-xs-10 col-md-6">
-          <h1>Hey!</h1>
-          <p>I'm <a href="assets/img/alexreyes.png">Alex Reyes</a>. Here's <a href="mailto:reyesruizalex@gmail.com">my email</a>.</p>
-          
-          <p>I'm a college student majoring in Computer Science at <a href = "http://www.psu.edu/">Penn State</a>. Currently <a href="https://www.microsoft.com/en-us/">interning at Microsoft</a>. Before that I worked at <a href="https://www.listrak.com/">Listrak</a> as a programmer intern. Here's my <a href="assets/resume.pdf">resume</a>.
+	<p class = "mainText mediumText">Student studying Computer Science @ Penn State University.</p>
+	
+	<a href="https://www.linkedin.com/in/alex-reyes-7450337b/"> <i class="fa fa-linkedin fa-1x myBtn" style = "font-size: 44px; color:#4875B4 "></i></a>
 
-          <p>If you're interested in getting in touch, here's my <a href="https://github.com/reyesalex">Github</a>, <a href="https://www.instagram.com/alex_reyes243/"> Instagram</a>, and <a href="https://www.linkedin.com/in/alex-reyes-7450337b/">LinkedIn</a>.
+	<a href="https://www.github.com/reyesalex"> <i class="fa fa-github fa-1x myBtn" style = "font-size: 44px; color:black"></i></a>
 
-          <p>✌️</p>
-        </div>
-        <div class="col-xs-1 col-md-3">  
-        </div>
-      </div>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){ 
-        $('#container').fadeIn(800);
-
-        $("a.transition").click(function(event){
-          event.preventDefault();
-          linkLocation = this.href;
-          $("body").fadeOut(300, redirectPage);      
-        });
-           
-        function redirectPage() {
-            window.location = linkLocation;
-        }
-
-      });
-    </script>
-  </body>
+	
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
