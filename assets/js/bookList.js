@@ -9,16 +9,17 @@ $(document).ready(function () {
         var data = JSON.parse(this.response);
 
         var total = data.length - 1;
-        $('.2019').append('<h2 class="year"> 2019 (' + total + ' total)</h2>')
+        $('.2019').hide().append('<h2 class="year"> 2019 (' + total + ' total)</h2>').fadeIn(800);
     
         data.forEach(book => {
+            
             var link = book.match('\,link:(.*)')[1]
 
             var bookTitle = book.match('^(.*?)\,link')[1]
 
             if (book != ""){ 
-                // $('.displayList').append('<a href =' + link + '>' + bookTitle + '</a>')
-                $('.displayList').append('<p class = "indent"><a href = ' + link + 'class = "no-underline">' + bookTitle + '</a></p>')
+            
+                $('.displayList').hide().append('<p class = "indent"><a href = ' + link + 'class = "no-underline">' + bookTitle + '</a></p>').fadeIn(800);
             }
         });
     }
