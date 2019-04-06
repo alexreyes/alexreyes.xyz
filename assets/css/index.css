@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-	font-size: 14px;
+	font-size: 30px;
 	color: rgb(29, 29, 29) !important;
 }
 
@@ -29,7 +29,7 @@ hr {
 	border-color: rgb(29, 29, 29) !important;
 }
 
-a {
+a{
 	-webkit-transition: color 0.2s ease-out;
 	-moz-transition: color 0.2s ease-out;
 	-o-transition: color 0.2s ease-out;
@@ -39,11 +39,31 @@ a {
 	color: rgb(29, 29, 29);
 }
 
+::-moz-selection { /* Code for Firefox */
+	background: yellow;
+  }
+  
+  ::selection {
+	  	background: yellow;
+  }
+
 p a, ul a {
 	color: rgba(0,0,0,0.5);
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+#containerIntro h1,
+#containerIntro p {
+    display: inline;
+}
+.indent { 
+	text-indent:2em;
+}
+  
+a.no-underline {
+	border-bottom: 0px;
+	
+}
 a:visited {
 	text-decoration: none;
 }
@@ -191,6 +211,15 @@ p.project-info {
 	margin-top: 0px;
 }
 
+.menu-bar {
+	float:right;
+	letter-spacing: .01rem;
+	word-spacing: .6rem;
+}
+
+a.no-spacing {
+	word-spacing: .01em;
+}
 @media (min-width: 991px) {
 	h1.project-title {
 		font-size: 70px;

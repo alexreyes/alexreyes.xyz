@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <meta name="keywords" content="Alex Reyes, Microsoft, Listrak, resume, penn state, psu/>
+
+    <title>Book List</title>
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="assets/css/index.css" rel="stylesheet" media="screen">
+
+    <script type="text/javascript">
+
+    </script>
+    <script type="text/javascript" src="https://use.typekit.net/hkc8kic.js"></script>
+    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137191118-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-137191118-1');
+    </script>
+
+</head>
+
+<body onunload="">
+    <div id = "root">
+        <div class="container" id="container">
+            <br>
+            <div class="row">
+                <div class="col-xs-1 col-md-3">
+                </div>
+                <div class="col-xs-10 col-md-6">                    
+                    <div id = "containerIntro">
+                        <h1>Book List</h1>
+                        <p class = "menu-bar"><a href = "index.html" class = 'no-underline'>Home </a><a href = "blog.html" class = 'no-underline'>Blog </a><a href = "projects.html" class = 'no-underline'>Projects </a><a href= "bookList.html" class = 'no-spacing no-underline' >Book List</a></p>
+                    </div>
+                    <br>
+                    <p>This year, I'm trying to read 52 books. Here's an updated list of my progress. Follow me on <a href = "https://www.goodreads.com/user/show/88678122-alex-reyes">Goodreads</a> for more.</p>
+
+                    <div class = '2019'></div>
+                    <br>
+                    <div class = 'displayList'></div>
+                    
+                </div>
+                <div class="col-xs-1 col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src = "assets/js/bookList.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#container').fadeIn(800);
+
+            $("a.transition").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(300, redirectPage);
+            });
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+
+        });
+    </script>
+</body>
+
+</html>
