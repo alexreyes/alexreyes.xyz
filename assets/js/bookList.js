@@ -1,28 +1,30 @@
 
 $(document).ready(function () {
-    var request = new XMLHttpRequest();
-    const app = document.getElementById("root");
-
-    request.open('GET', 'https://reyes-personal-website-api.herokuapp.com/bookList', true);
-
-    request.onload = function () {
-        var data = JSON.parse(this.response);
-
-        var total = data.length - 1;
-        $('.2019').hide().append('<h2 class="year"> 2019 (' + total + ' total)</h2>').fadeIn(800);
-    
+    // Replace ./data.json with your JSON feed
+    fetch('https://cors-anywhere.herokuapp.com/https://reyes-personal-website-api.herokuapp.com/book2019')
+    .then(response => {
+    return response.json()
+    })
+    .then(data => {
+        var data = data[0]
+        var total = data.length;
+        $('.2019').hide().append('<h2 class="year"> 2019 (' + total + ' total)</h2>').fadeIn(0);
+        
         data.forEach(book => {
-            
-            var link = book.match('\,link:(.*)')[1]
+            if (book) {
+                var link = book.link
 
-            var bookTitle = book.match('^(.*?)\,link')[1]
+                var bookTitle = book.title
 
-            if (book != ""){ 
-            
-                $('.displayList').hide().append('<p class = "indent"><a href = ' + link + 'class = "no-underline">' + bookTitle + '</a></p>').fadeIn(800);
+                if (book != ""){ 
+                
+                    $('.displayList').hide().append('<p class = "indent"><a href = ' + link + 'class = "no-underline">' + bookTitle + '</a></p>').fadeIn(0);
+                }
             }
         });
-    }
-    request.send();
+    })
+    .catch(err => {
+        // Do something for an error here
+        console.log("error reading JSON")
+    })
 });
-

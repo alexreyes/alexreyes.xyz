@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html>
 
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Alex Reyes">
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Alex Reyes"/>
+        <meta property="og:url" content="index.html"/>
+        <meta property="og:site_name" content="Alex Reyes"/>
+        <meta property="og:description" content="Alex Reyes"/>
+        
+        <meta name="keywords" content="Alex Reyes, Microsoft, Listrak, resume, penn state/>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <meta name="description" content="Alex Reyes personal site"/>
+        
+        <!-- Bootstrap -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="assets/css/index.css" rel="stylesheet" media="screen">
+    
+        <script type="text/javascript">
+    
+        </script>
+        <script type="text/javascript" src="https://use.typekit.net/hkc8kic.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137191118-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+    
+          gtag('config', 'UA-137191118-1');
+        </script>
+    
+        <title>Alex's Book List</title>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-
-    <meta name="keywords" content="Alex Reyes, Microsoft, Listrak, resume, penn state, psu/>
-
-    <title>Book List</title>
-    <meta name=" viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="assets/css/index.css" rel="stylesheet" media="screen">
-
-    <script type="text/javascript">
-
-    </script>
-    <script type="text/javascript" src="https://use.typekit.net/hkc8kic.js"></script>
-    <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137191118-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-137191118-1');
-    </script>
-
-</head>
+      </head>
 
 <body onunload="">
     <div id = "root">
@@ -43,13 +52,15 @@
                 </div>
                 <div class="col-xs-10 col-md-6">                    
                     <div id = "containerIntro">
-                        <h1>Book List</h1>
-                        <p class = "menu-bar"><a href = "index.html" class = 'no-underline'>Home </a><a href= "bookList.html" class = 'no-spacing no-underline' >Book List</a></p>
+                        <h1 style="background-color: #FFFF00">Book List</h1>
+                        <p class = "menu-bar"><a href = "/" class = 'no-underline'>Home </a><a href= "https://www.alexreyes.xyz/bookList" class = 'no-spacing no-underline' >Book List</a></p>
                     </div>
                     <br>
-                    <p>This year, I'm trying to read 52 books. Here's an updated list of my progress. Follow me on <a href = "https://www.goodreads.com/user/show/88678122-alex-reyes">Goodreads</a> for more.</p>
-
-                    <div class = '2019'></div>
+                    <p>This year, I'm trying to read 52 books. Here's an always up-to-date list of my progress</p>
+                    <br>
+                    <p>Follow me on <a href = "https://www.goodreads.com/user/show/88678122-alex-reyes">Goodreads</a> for more.</p>
+                
+                    <div class = '2019' style = "padding-top: .5em"></div>
                     <br>
                     <div class = 'displayList'></div>
                     
@@ -67,20 +78,20 @@
     <script src = "assets/js/bookList.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#container').fadeIn(800);
+      $(document).ready(function(){ 
+        $('#container').fadeIn(800);
 
-            $("a.transition").click(function (event) {
-                event.preventDefault();
-                linkLocation = this.href;
-                $("body").fadeOut(300, redirectPage);
-            });
-
-            function redirectPage() {
-                window.location = linkLocation;
-            }
-
+        $("a.transition").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $("body").fadeOut(300, redirectPage);      
         });
+           
+        function redirectPage() {
+            window.location = linkLocation;
+        }
+
+      });
     </script>
 </body>
 
