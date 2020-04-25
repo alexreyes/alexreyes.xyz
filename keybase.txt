@@ -1,1 +1,56 @@
-I am verifying that this site is owned by alexreyes on keybase
+==================================================================
+https://keybase.io/alexreyes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://alexreyes.xyz
+  * I am alexreyes (https://keybase.io/alexreyes) on keybase.
+  * I have a public key ASC_9jPhdAWIcbAjdDrkwOYnHdIltIX97s0whtgZ_AlNMQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017c339fbc3e69311c7f9e22de6d92b393611747e8726cc488b9642bba22b413730a",
+      "host": "keybase.io",
+      "kid": "0120bff633e174058871b023743ae4c0e6271dd225b485fdeecd3086d819fc094d310a",
+      "uid": "ca675a1ee71c4de2a4177c3641cf3619",
+      "username": "alexreyes"
+    },
+    "merkle_root": {
+      "ctime": 1587790882,
+      "hash": "5b5dcff5e507ff5e5e52722a9c9c66984c532a26d09a43052b109d192ee7f6329bf11394b4fde9428def331abb69682d6cf441881fb6e71c80f22739c2592b83",
+      "hash_meta": "487d523b12e57f08333c26cf8a98f5056b94b2a4ce4d3f6085856e730d8aaf35",
+      "seqno": 16046040
+    },
+    "service": {
+      "entropy": "+QQtrUSoJk61olhRZH1ySNy6",
+      "hostname": "alexreyes.xyz",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.3.0"
+  },
+  "ctime": 1587790887,
+  "expire_in": 504576000,
+  "prev": "18a55a8b82ec039fe7d9a0e60e4d147d39899e87a210bc4031bee16122901764",
+  "seqno": 18,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgv/Yz4XQFiHGwI3Q65MDmJx3SJbSF/e7NMIbYGfwJTTEKp3BheWxvYWTESpcCEsQgGKVai4LsA5/n2aDmDk0UfTmJnoeiELxAMb7hYSKQF2TEIMoOUpHHz1DVgIBU4YZpSmRb3PipE9dsD+iQIRn2EfrdAgHCo3NpZ8RAzwV8gJw744XCtDgajL6WgaMJU6CJlpzyasre6nxzSmkv+3Xd4wM3G0wtg3mVHGrtDd2AOjiljRP6hL6jlCyiB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIMKSXbdwBu2fpSm+yH50n6b9CEH/EeDcuBzHXhzS1LrEo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/alexreyes
+
+==================================================================
