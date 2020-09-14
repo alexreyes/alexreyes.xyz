@@ -17,11 +17,6 @@ function mouseClicked() {
 	console.log(boxSize);
 }
 
-function variableEllipse(x, y, px, py) {
-	let speed = abs(x - px) + abs(y - py); 
-	stroke(speed); 
-	ellipse(x, y, speed, speed); 
-}
 function windowResized() {
 	resizeCanvas(windowWidth, windowHeight); 
 }
