@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     // 2021: 
-    fetch('https://flaask.alex243.repl.co/?year=2021')
+    fetch('https://book-list-api-v2.alex243.repl.co/?year=2021')
     .then(response => {
     return response.json()
     })
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
                 if (book != ""){ 
                 
-                    $('.displayList2021').hide().append('<p class = "indent"><a href = ' + link + 'class = "no-underline">' + bookTitle + '</a></p>').fadeIn(0);
+                    $('.displayList2021').hide().append('<p class = "indent"><a href = ' + link + ' target="_blank" class="no-underline">' + bookTitle + '</a></p>').fadeIn(0);
                 }
             }
         });
@@ -29,7 +29,7 @@ $(document).ready(function () {
     })
 
     // 2020: 
-    fetch('https://flaask.alex243.repl.co/?year=2020')
+    fetch('https://book-list-api-v2.alex243.repl.co/?year=2020')
     .then(response => {
     return response.json()
     })
@@ -45,7 +45,7 @@ $(document).ready(function () {
 
                 if (book != ""){ 
                 
-                    $('.displayList2020').hide().append('<p class = "indent"><a href = ' + link + 'class = "no-underline">' + bookTitle + '</a></p>').fadeIn(0);
+                    $('.displayList2020').hide().append('<p class = "indent"><a href = ' + link + ' target="_blank" class="no-underline">' + bookTitle + '</a></p>').fadeIn(0);
                 }
             }
         });
@@ -56,7 +56,7 @@ $(document).ready(function () {
     })
 
     // 2019: 
-    fetch('https://flaask.alex243.repl.co/?year=2019')
+    fetch('https://book-list-api-v2.alex243.repl.co/?year=2019')
     .then(response => {
     return response.json()
     })
