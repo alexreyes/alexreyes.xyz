@@ -55,7 +55,7 @@ $(document).ready(function () {
         console.log("error reading JSON")
     })
 
-    // 2019: 
+    // 2019:     
     fetch('https://book-list-api-v2.alex243.repl.co/?year=2019')
     .then(response => {
     return response.json()
