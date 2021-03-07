@@ -8,7 +8,10 @@ $(document).ready(function () {
     })
     .then(data => {
         var total = data.length;
-        $('.2021').hide().append('<h2 class="year"> 2021 (' + total + ' total)</h2>').fadeIn(0);
+        var percentDone = (total / 52)*100;
+        percentDone = Math.round(percentDone);
+
+        $('.2021').hide().append('<h2 class="year"> 2021 (' + total + ' total). ' + percentDone + '% done!</h2>').fadeIn(0);
         
         data.forEach(book => {
             if (book) {
